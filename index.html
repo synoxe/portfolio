@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <canvas id="bg-anim" class="bg-anim"></canvas>
+        <div class="blobs-bg">
+            <svg id="blobs-svg" viewBox="0 0 1000 1000" width="100%" height="100%" preserveAspectRatio="none">
+                <defs>
+                    <radialGradient id="blobGrad1" cx="50%" cy="50%" r="80%">
+                        <stop offset="0%" stop-color="#ffb347"/>
+                        <stop offset="100%" stop-color="#ff5e62"/>
+                    </radialGradient>
+                    <radialGradient id="blobGrad2" cx="50%" cy="50%" r="80%">
+                        <stop offset="0%" stop-color="#569494"/>
+                        <stop offset="100%" stop-color="#43cea2"/>
+                    </radialGradient>
+                    <radialGradient id="blobGrad3" cx="50%" cy="50%" r="80%">
+                        <stop offset="0%" stop-color="#fff"/>
+                        <stop offset="100%" stop-color="#b0c4d4"/>
+                    </radialGradient>
+                </defs>
+                <g>
+                    <ellipse id="blob1" cx="300" cy="350" rx="220" ry="180" fill="url(#blobGrad1)" opacity="0.55"/>
+                    <ellipse id="blob2" cx="700" cy="600" rx="200" ry="160" fill="url(#blobGrad2)" opacity="0.45"/>
+                    <ellipse id="blob3" cx="500" cy="800" rx="180" ry="140" fill="url(#blobGrad3)" opacity="0.32"/>
+                </g>
+            </svg>
+        </div>
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="profile-info">
+                <img src="assets/images/profie.jpg" alt="Sevde Çakar" class="profile-pic">
+                <div>
+                    <h1>Sevde Çakar</h1>
+                    <p>Grafik Tasarımcı</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">Hakkımda</a></li>
+                    <li><a href="#projects">Projeler</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Hakkımda</h2>
+            <p>Yaratıcı çözümler üreten, estetik bakış açısını güçlü teknik bilgiyle birleştiren bir grafik tasarımcıyım. Adobe Photoshop, Illustrator ve diğer tasarım araçlarını etkin şekilde kullanarak marka kimliği, sosyal medya içerikleri ve dijital kampanya görselleri tasarlıyorum. Detaylara önem veren, yenilikçi ve zamanında teslim konusunda disiplinli bir çalışma anlayışına sahibim. Amacım, görsel iletişim gücü yüksek tasarımlar ile markalara değer katmaktır. yrıca etsy platformunda mağaza yönetimi konusunda da deneyimliyim
+            </p>
+            <p>CV PDF'ime <a class="cv" href="bitenler/Sevde_Çakar_-_Grafik_Tasarım (3).pdf">buradan</a> ulaşabilirsiniz</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projelerim</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-title="Afiş Tasarımı" data-img="bitenler/afiş png.png" data-desc="Marka için hazırlanan dikkat çekici afiş tasarımı.">
+                    <img src="bitenler/afiş png.png" alt="Afiş Tasarımı">
+                    <h3>Afiş Tasarımı</h3>
+                    <p>Parti için hazırlanan dikkat çekici afiş tasarımı.</p>
+                </div>
+                <div class="project-card" data-title="Reklam Afişi Tasarımı" data-img="bitenler/energy drink.png" data-desc="Enerji içeceği için dinamik ve genç bir ambalaj tasarımı.">
+                    <img src="bitenler/energy drink.png" alt="Energy Drink Tasarımı">
+                    <h3>Reklam Afişi Tasarımı</h3>
+                    <p>Enerji içeceği için dinamik ve genç bir ambalaj tasarımı.</p>
+                </div>
+                <div class="project-card" data-title="3D Blender Oda Tasarımı" data-img="bitenler/living room Untitled.png" data-desc="Modern yaşam alanı için dekoratif blender tasarımı.">
+                    <img src="bitenler/living room Untitled.png" alt="Living Room Poster">
+                    <h3>3D Blender Oda Tasarımı</h3>
+                    <p>Modern yaşam alanı için dekoratif blender tasarımı.</p>
+                </div>
+                <div class="project-card" data-title="3D Pancake Tasarımı" data-img="bitenler/pancakeUntitled.png" data-desc="Kahvaltı temalı eğlenceli bir blender çalışması.">
+                    <img src="bitenler/pancakeUntitled.png" alt="Pancake Tasarımı">
+                    <h3>3D Pancake Tasarımı</h3>
+                    <p>Kahvaltı temalı eğlenceli bir blender çalışması.</p>
+                </div>
+                <div class="project-card" data-title="Sosyal Medya Tasarımı" data-img="bitenler/Sosyalmedya.jpg" data-desc="Instagram için hazırlanan sosyal medya kampanya görseli.">
+                    <img src="bitenler/Sosyalmedya.jpg" alt="Sosyal Medya Görseli">
+                    <h3>Sosyal Medya Tasarımı</h3>
+                    <p>Instagram için hazırlanan sosyal medya kampanya görseli.</p>
+                </div>
+                <div class="project-card" data-title="3D Sushi Tasarımı" data-img="bitenler/sushi Untitled.png" data-desc="Japon mutfağı temalı yaratıcı bir 3D tasarım.">
+                    <img src="bitenler/sushi Untitled.png" alt="Sushi Tasarımı">
+                    <h3>3D Sushi Tasarımı</h3>
+                    <p>Japon mutfağı temalı yaratıcı bir 3D tasarım.</p>
+                </div>
+                <div class="project-card" data-title="3D Blender Oda Tasarımı" data-img="bitenler/Untitled.jpg" data-desc="Modern yaşam alanı için dekoratif blender tasarımı.">
+                    <img src="bitenler/Untitled.jpg" alt="Genel Tasarım">
+                    <h3>3D Blender Oda Tasarımı</h3>
+                    <p>Modern yaşam alanı için dekoratif blender tasarımı.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills-langs" class="skills-langs-section">
+        <div class="container">
+            <div class="skills-langs-flex">
+                <div class="skills-box section-box">
+                    <h2>Beceriler</h2>
+                    <ul>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Blender</li>
+                    </ul>
+                </div>
+                <div class="langs-box section-box">
+                    <h2>Diller</h2>
+                    <ul>
+                        <li>Türkçe (Ana dil)</li>
+                        <li>İngilizce (İyi)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+
+    <!-- Modal for project details (her zaman body'nin en dışında) -->
+</body>
+<div id="project-modal" class="project-modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <img id="modal-img" src="" alt="">
+    <h3 id="modal-title"></h3>
+    <p id="modal-desc"></p>
+  </div>
+</div>
+<script src="js/main.js"></script>
+</html>
+
+
+
+    <footer id="contact">
+        <div class="container">
+            <h2>İletişim</h2>
+            <a href="mailto:sevdecakar06@gmail.com" class="email-btn">E-posta Gönder</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
