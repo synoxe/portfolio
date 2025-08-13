@@ -1,0 +1,51 @@
+/* Responsive styles for the portfolio website */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header, .footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.intro {
+    padding: 40px 0;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        flex: 1 1 100%;
+    }
+}
